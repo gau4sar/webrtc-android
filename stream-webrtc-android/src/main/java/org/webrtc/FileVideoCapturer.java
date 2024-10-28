@@ -64,7 +64,7 @@ public class FileVideoCapturer implements VideoCapturer {
       String[] headerTokens = header.split("[ ]");
       int w = 0;
       int h = 0;
-      String colorSpace = "";
+      String colorSpace = "420";
       for (String tok : headerTokens) {
         char c = tok.charAt(0);
         switch (c) {
